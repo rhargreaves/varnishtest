@@ -20,9 +20,9 @@ RUN mkdir -p /opt/varnish && \
     dpkg -i /opt/varnish/varnish.deb /opt/varnish/libvarnish1.deb && \
     rm -r /opt/varnish
 
-CMD /install.sh -F -f /etc/varnish/varnish.vcl -l 4096 -s malloc,$VARNISH_SIZE -a :$VARNISH_PORT
+#CMD /install.sh -F -f /etc/varnish/varnish.vcl -l 4096 -s malloc,$VARNISH_SIZE -a :$VARNISH_PORT
 
-ADD install.sh /install.sh
+#ADD install.sh /install.sh
 
 #ADD opt/ /opt
 
