@@ -10,7 +10,7 @@ First build the docker image:
 $ docker build -t roberthargreaves/varnishtest .
 ```
 
-Or pull down the docker image from https://hub.docker.com/r/roberthargreaves/varnishtest/
+Or pull down the latest docker image from https://hub.docker.com/r/roberthargreaves/varnishtest/
 
 ```
 $ docker pull roberthargreaves/varnishtest
