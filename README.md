@@ -7,7 +7,7 @@ A docker image for testing VCL with mocked backends and clients. Currently uses 
 First build the docker image:
 
 ```
-$ docker build -t varnishtest .
+$ docker build -t roberthargreaves/varnishtest .
 ```
 
 Or pull down the docker image from https://hub.docker.com/r/roberthargreaves/varnishtest/
@@ -19,7 +19,7 @@ $ docker pull roberthargreaves/varnishtest
 ## Usage
 
 ```
-docker run -i -v ~/vcl-testing/tests:/opt/varnish/tests varnishtest:10 varnishtest /opt/varnish/tests/example.vtc
+docker run -i -v ~/vcl-testing/tests:/opt/varnish/tests roberthargreaves/varnishtest varnishtest /opt/varnish/tests/example.vtc
 ```
 
 ## Example VTC Files
