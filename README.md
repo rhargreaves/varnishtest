@@ -18,9 +18,8 @@ $ docker pull roberthargreaves/varnishtest
 
 ## Usage
 
-```
-docker run -i -v ~/vcl-testing/tests:/opt/varnish/tests roberthargreaves/varnishtest varnishtest /opt/varnish/tests/example.vtc
-```
+1. Place VTC files to test in `tests`
+2. Run `make test`
 
 ## Example VTC Files
 
