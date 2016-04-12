@@ -4,13 +4,13 @@ A docker image for testing VCL with mocked backends and clients. Currently uses 
 
 ## Setup
 
-First build the docker image:
+Build the docker image (`make build`) or run:
 
 ```
 $ docker build -t roberthargreaves/varnishtest .
 ```
 
-Or pull down the latest docker image from https://hub.docker.com/r/roberthargreaves/varnishtest/
+Alternatively, pull the latest docker image using `docker pull roberthargreaves/varnishtest`
 
 ```
 $ docker pull roberthargreaves/varnishtest
