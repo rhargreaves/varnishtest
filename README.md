@@ -49,7 +49,7 @@ client c1 -run
 Command to run:
 
 ```
-$ docker run -v $(pwd):/work roberthargreaves/varnishtest /test-vcl.sh example.vtc example.vcl
+$ docker run -v $(pwd):/work rhargreaves/varnishtest /test-vcl.sh example.vtc example.vcl
 ```
 
 ## Example VTC Files
