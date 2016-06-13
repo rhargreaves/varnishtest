@@ -16,12 +16,4 @@ RUN mkdir -p /opt/varnish && \
     rm -r /opt/varnish && \
     ln -s /usr/sbin /varnishd
 
-WORKDIR /tmp
-
-#CMD /install.sh -F -f /etc/varnish/varnish.vcl -l 4096 -s malloc,$VARNISH_SIZE -a :$VARNISH_PORT
-
-#ADD install.sh /install.sh
-
-#ADD tests/ /opt/varnish/tests
-
-#ONBUILD ADD . /opt/varnish
+ADD test-vcl.sh /test-vcl.sh
