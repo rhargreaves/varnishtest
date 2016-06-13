@@ -46,6 +46,12 @@ client c1 {
 client c1 -run
 ```
 
+Command to run:
+
+```
+$ docker run -v $(pwd):/work roberthargreaves/varnishtest /test-vcl.sh example.vtc example.vcl
+```
+
 ## Example VTC Files
 
 You can find examples of tests here in the Varnish source -
