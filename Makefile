@@ -1,4 +1,4 @@
-NS = roberthargreaves
+NS = rhargreaves
 VERSION ?= latest
 REPO = varnishtest
 NAME = varnishtest

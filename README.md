@@ -4,13 +4,13 @@ A docker image for testing VCL with mocked backends and clients. Currently uses 
 
 ## Setup
 
-Build the docker image (`make build`) or run `docker build -t roberthargreaves/varnishtest .`
+Build the docker image (`make build`) or run `docker build -t rhargreaves/varnishtest .`
 
 ## Usage
 
 This tool can be used to test Varnish configuration against VTC files:
 
-Run `docker run -v $(pwd):/work roberthargreaves/varnishtest /test-vcl.sh <vtc_file> <vcl_file>` 
+Run `docker run -v $(pwd):/work rhargreaves/varnishtest /test-vcl.sh <vtc_file> <vcl_file>` 
 
 For example:
 
