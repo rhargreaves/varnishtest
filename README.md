@@ -10,7 +10,9 @@ Build the docker image (`make build`) or run `docker build -t rhargreaves/varnis
 
 This tool can be used to test Varnish configuration against VTC files:
 
-Run `docker run -v $(pwd):/work rhargreaves/varnishtest /test-vcl.sh <vtc_file> <vcl_file>` 
+```
+$ docker run -v $(pwd):/work rhargreaves/varnishtest /test-vcl.sh <vtc_file> <vcl_file>
+```
 
 For example:
 
