@@ -9,11 +9,10 @@ RUN apt-get install -y python-dev
 RUN pip install jinja2
 RUN pip install j2cli
 
-RUN mkdir -p /opt/varnish && \
-    curl -L https://launchpad.net/ubuntu/+source/varnish/2.1.5-2/+build/2471928/+files/varnish_2.1.5-2_amd64.deb > /opt/varnish/varnish.deb && \
-    curl -L https://launchpad.net/ubuntu/+source/varnish/2.1.5-2/+build/2471928/+files/libvarnish1_2.1.5-2_amd64.deb > /opt/varnish/libvarnish1.deb && \
-    dpkg -i /opt/varnish/varnish.deb /opt/varnish/libvarnish1.deb && \
-    rm -r /opt/varnish && \
-    ln -s /usr/sbin /varnishd
+ENV VERSION 3.0
+RUN curl -sS https://repo.varnish-cache.org/GPG-key.txt | apt-key add - && \
+	echo "deb http://repo.varnish-cache.org/ubuntu/ trusty varnish-${VERSION}" >> /etc/apt/sources.list.d/varnish-cache.list && \
+	apt-get update && \
+	apt-get install -yq varnish
 
 ADD test-vcl.sh /test-vcl.sh
