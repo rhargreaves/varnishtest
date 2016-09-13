@@ -2,6 +2,11 @@
 
 Docker images for testing VCL.
 
+Available to pull from Docker Hub:
+
+* Varnish 2.1.5: `docker pull rhargreaves/varnishtest`
+* Varnish 3.0: `docker pull rhargreaves/varnishtest-3.0`
+
 ## Setup
 
 Build the docker image:
