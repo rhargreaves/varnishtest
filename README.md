@@ -1,10 +1,13 @@
-# Testing VCL
+# Varnishtest Docker Images
 
-A docker image for testing VCL with mocked backends and clients. Currently uses Varnish 2.1.5.
+Docker images for testing VCL.
 
 ## Setup
 
-Build the docker image (`make build`) or run `docker build -t rhargreaves/varnishtest .`
+Build the docker image:
+
+* Varnish 2.1.5: `docker build -t rhargreaves/varnishtest`
+* Varnish 3.0: `docker build -t rhargreaves/varnishtest-3.0`
 
 ## Usage
 
@@ -56,7 +59,10 @@ $ docker run -v $(pwd):/work rhargreaves/varnishtest /test-vcl.sh example.vtc ex
 
 ## Example VTC Files
 
-You can find examples of tests here in the Varnish source -
-https://github.com/varnishcache/varnish-cache/tree/2.1/bin/varnishtest/tests
+You can find examples of tests in the Varnish source:
+
+* Varnish 2.1.5: https://github.com/varnishcache/varnish-cache/tree/2.1/bin/varnishtest/tests
+* Varnish 3.0: https://github.com/varnishcache/varnish-cache/tree/3.0/bin/varnishtest/tests
+
 
 
